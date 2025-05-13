@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  transition: background-color 0.5s ease;
+}
+
+#animateBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#animateBtn:hover {
+  background-color: #eee;
+}
+
+.bounce {
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Theme Colors */
+body.blue {
+  background-color: #d0e8ff;
+}
+
+body.green {
+  background-color: #d4fcd4;
+}
+
+body.pink {
+  background-color: #ffd6e7;
+}
